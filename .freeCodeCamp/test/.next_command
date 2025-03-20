@@ -36,3 +36,64 @@ pwd
 ls --color=auto -alh
 pwd
 pwd
+pwd
+git init
+git remote add origin https://github.com/Runbits/CelestialBodies_database.git
+cd CelestialBodies_database
+git clone https://github.com/Runbits/CelestialBodies_database.git
+cd CelestialBodies_database
+ls --color=auto
+git add universe.sql
+exit
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+__vsc_regex_environment="^CYGWIN*|MINGW*|MSYS*"
+[[ "$(uname -s)" =~ $__vsc_regex_environment ]]
+__vsc_is_windows=0
+__vsc_regex_histcontrol=".*(erasedups|ignoreboth|ignoredups).*"
+[[ "$HISTCONTROL" =~ $__vsc_regex_histcontrol ]]
+__vsc_history_verify=1
+builtin unset __vsc_regex_environment
+builtin unset __vsc_regex_histcontrol
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+pwd
+ls --color=auto -alh
+cp universe.sql CelestialBodies_database/
+cd CelestialBodies_database/
+ls --color=auto
+git add universe.sql
+git commit -m "Completion of the Celestial Bodies Project."
+git push origin main
+git pull origin main
+git add .
+git commit -m "Resolving conflicts"
+git push origin main
+git config --gloabl user.email
+git config --global user.email
+git config user.email "50782028+Runbits@users.noreply.github.com"
+git commit --amend --reset-author
+git push origin main
+ls --color=auto
+cd ..
+ls --color=auto
+ls --color=auto -alh
