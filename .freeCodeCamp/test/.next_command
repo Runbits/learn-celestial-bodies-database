@@ -35,3 +35,4 @@ pg_dump -cC --inserts -U freecodecamp universe > universe.sql
 pwd
 ls --color=auto -alh
 pwd
+pwd
