@@ -97,3 +97,8 @@ ls --color=auto
 cd ..
 ls --color=auto
 ls --color=auto -alh
+ls --color=auto -alh
+psql --username=freecodecamp --dbname=postgres
+ls --color=auto
+psql -U postgres < universe.sql
+psql --username=freecodecamp --dbname=postgres
